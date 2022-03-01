@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <form action="/jobs" method="post">
+      <label for="title">What is the job title?</label>
+      <input id="title" name="title" type="text">
+      <label for="description">What is the job description?</label>
+      <input id="description" name="description" type="textarea">
+      <label for="contactName">What is your name?</label>
+      <input id="contactName" name="contactName" type="text">
+      <label for="contactEmail">What is your email?</label>
+      <input id="contactEmail" name="contactEmail" type="text">
+      <label for="contactPhoneNumber">What is your number?</label>
+      <input id="contactPhoneNumber" name="contactPhoneNumber" type="text">
+      <button class="btn btn-warning" type="submit">Add job to job board!</button>
+    </form>
+  </body>
+</html>
