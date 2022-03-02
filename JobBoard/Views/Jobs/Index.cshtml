@@ -16,15 +16,7 @@
     <ul>
       @foreach (Job job in Model)
       {
-        <li>
-          <ul>
-            <li><strong> Title: @job.Title</strong></li>
-            <li> Description: @job.Description</li>
-            <li> Name: @job.ContactName</li>
-            <li> Email: @job.ContactEmail</li>
-            <li> Phone Number: @job.ContactPhoneNumber</li>
-          </ul>
-        </li>
+        <li><a href="/jobs/@job.Id"> <button class="btn btn-warning"><strong>@job.Title</strong></button></a></li>
       }
     </ul>
     <a href='/jobs/new'><button class="btn btn-warning">Add a new job</button></a>

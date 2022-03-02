@@ -25,5 +25,12 @@ namespace JobBoard.Controllers
       Job myJob = new Job(title, description, contactName, contactEmail, contactPhoneNumber);
       return RedirectToAction("Index");
     }
+
+    [HttpGet("/jobs/{id}")]
+    public ActionResult Show(int id)
+    {
+      Job foundJob = Job.Find(id);
+      return View(foundJob);
+    }
   }
 }
